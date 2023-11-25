@@ -1,22 +1,24 @@
 {
-    "api": [
-      {
-        "food": "bread and rice",
-        "cost": "5000",
-        "id": 1
-      }, {
-        "food": "yam",
-        "cost": "890",
-        "id": 2
-      }, {
-        "food": "beans",
-        "cost": "4000",
-        "id": 3
-      }, {
-        "food": "bread",
-        "cost": "200",
-        "id": 4
-      }
-  
-    ]
-  }
+  "api": [
+    {
+      "food": "bread and rice",
+      "price": "5000",
+      "id": 1
+    },
+    {
+      "food": "dsa",
+      "price": "890",
+      "id": 2
+    },
+    {
+      "food": "beans",
+      "price": "4000",
+      "id": 3
+    },
+    {
+      "food": "bread and rice",
+      "cost": "5000",
+      "id": 10
+    }
+  ]
+}

@@ -13,7 +13,7 @@ Accept: application/application/json
  {
         "food": "bread and rice",
         "cost": "5000",
-        "id": 1
+        "id": 10
       }
 
 ###
@@ -26,6 +26,7 @@ Accept: application/json
   {
         "food": "food",
         "cost": "1337",
+      
       }
 }
 

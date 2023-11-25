@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Api from './api/Api'
 
 import './App.css'
 
@@ -7,7 +8,7 @@ function App() {
 
   return (
     <>
-  
+    <Api/>
     </>
   )
 }
