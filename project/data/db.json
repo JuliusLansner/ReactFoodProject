@@ -6,19 +6,9 @@
       "id": 1
     },
     {
-      "food": "dsa",
+      "food": "hu",
       "price": "890",
       "id": 2
-    },
-    {
-      "food": "beans",
-      "price": "4000",
-      "id": 3
-    },
-    {
-      "food": "bread and rice",
-      "cost": "5000",
-      "id": 10
     }
   ]
 }

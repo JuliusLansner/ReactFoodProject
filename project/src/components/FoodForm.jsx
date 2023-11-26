@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState,useEffect,updateFood } from "react";
+import { useState,useEffect } from "react";
 
 function FoodForm({ blank, foodEdit, updateCreate}) {
   const [food, setFood] = useState({...foodEdit});
@@ -7,7 +7,7 @@ function FoodForm({ blank, foodEdit, updateCreate}) {
   useEffect(() => {
     setFood(foodEdit)
   }, [foodEdit]);
-
+//det er er hvor vores food bliver sat, som vi kan bruge i resten af koden som prop.
   function handleChange(event){
     const value = event.target.value
     const foods = event.target.id
