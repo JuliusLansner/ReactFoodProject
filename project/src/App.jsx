@@ -19,12 +19,20 @@ function App() {
     });
   },[]);
   
+  //update foodList
+  function updateFoodList() {
+    fetchData(APIURL, (data) => {
+      console.log(data);
+      // Assuming data is an object with a property named 'foodList'
+      setFoodList(() => data);
+    });
+  }
 
   return (
     <>
   <div>
-    <FoodList foodList={foodList} setFoodList={setFoodList} setFoodToEdit = {setFoodToEdit}/>
-    <FoodForm foodList={foodList} setFoodList={setFoodList} foodToEdit={foodToEdit}/>
+    <FoodList foodList={foodList} updateFoodList={updateFoodList} setFoodToEdit = {setFoodToEdit}/>
+    <FoodForm foodList={foodList} updateFoodList={updateFoodList}  foodToEdit={foodToEdit}/>
   </div>
     </>
   )

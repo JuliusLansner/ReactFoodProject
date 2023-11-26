@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { fetchData } from "../../utill/persistense";
 
-function FoodForm({ foodList, setFoodList, foodToEdit }) {
+function FoodForm({ foodList, updateFoodList, foodToEdit }) {
   const [id, setId] = useState("");
   const [food, setFood] = useState("");
   const [cost, setCost] = useState("");
@@ -29,11 +29,13 @@ function FoodForm({ foodList, setFoodList, foodToEdit }) {
       APIURL,
       (data) => {
         console.log(data);
+        updateFoodList()
       },
       "POST",
       form
     );
-    clearForm;
+
+    clearForm();
   }
   //Function to update food
   function updateFood() {
@@ -44,17 +46,14 @@ function FoodForm({ foodList, setFoodList, foodToEdit }) {
         `${APIURL}/${id}`,
         (data) => {
           console.log(data);
+          updateFoodList()
         },
         "PUT",
         form
       );
     }
 
-    setFoodList((prevFoodList) =>
-      prevFoodList.map((item) => (item.id === id ? { ...item, ...form } : item))
-    );
-
-    clearForm
+    clearForm()
   }
 
   //When you submit form

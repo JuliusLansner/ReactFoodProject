@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { fetchData } from '../../utill/persistense';
 
-function FoodList({foodList,setFoodList,setFoodToEdit}) {
+function FoodList({foodList,updateFoodList,setFoodToEdit}) {
   const APIURL = 'http://localhost:3000/api';
 
   
@@ -11,13 +11,13 @@ function FoodList({foodList,setFoodList,setFoodToEdit}) {
    setFoodToEdit(edit)
   }
 
-  function deleteFoodById(id){
-
-   fetchData(`${APIURL}/${id}`,()=>{
-    console.log({id})
-   },'DELETE')
-
-   setFoodList((prevFoodList) => prevFoodList.filter((food) => food.id !== id));
+  function deleteFoodById(id) {
+    // Assuming fetchData returns a Promise
+    fetchData(`${APIURL}/${id}`, () => {
+      console.log({ id });
+      // The state update is moved here to ensure it happens after the fetch
+      updateFoodList();
+    }, 'DELETE');
   }
 
   return (

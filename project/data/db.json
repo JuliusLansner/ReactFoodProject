@@ -11,19 +11,14 @@
       "id": 3
     },
     {
-      "id": 6,
-      "food": "Kokos",
-      "cost": "60"
+      "id": 4,
+      "food": "Kokos4",
+      "cost": "300"
     },
     {
-      "id": 7,
-      "food": "Kokos",
-      "cost": "60"
-    },
-    {
-      "id": 8,
-      "food": "Ymer",
-      "cost": "500"
+      "id": 5,
+      "food": "Jordbær4",
+      "cost": "20"
     }
   ]
 }
