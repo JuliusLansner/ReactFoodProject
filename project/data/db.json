@@ -1,22 +1,29 @@
 {
-    "api": [
-      {
-        "food": "bread and rice",
-        "cost": "5000",
-        "id": 1
-      }, {
-        "food": "yam",
-        "cost": "890",
-        "id": 2
-      }, {
-        "food": "beans",
-        "cost": "4000",
-        "id": 3
-      }, {
-        "food": "bread",
-        "cost": "200",
-        "id": 4
-      }
-  
-    ]
-  }
+  "api": [
+    {
+      "food": "bread and rice",
+      "cost": "5000",
+      "id": 1
+    },
+    {
+      "food": "beans",
+      "cost": "4000",
+      "id": 3
+    },
+    {
+      "id": 6,
+      "food": "Kokos",
+      "cost": "60"
+    },
+    {
+      "id": 7,
+      "food": "Kokos",
+      "cost": "60"
+    },
+    {
+      "id": 8,
+      "food": "Ymer",
+      "cost": "500"
+    }
+  ]
+}
