@@ -12,12 +12,12 @@
     },
     {
       "id": 4,
-      "food": "Kokos4",
+      "food": "jordbær",
       "cost": "300"
     },
     {
       "id": 5,
-      "food": "Jordbær4",
+      "food": "Kokos",
       "cost": "20"
     }
   ]
